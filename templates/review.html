@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Review Annotations</title>
+</head>
+<body>
+    <h1>Перегляд анотованих текстів</h1>
+    <ul>
+        {% for en, uk in annotated_texts %}
+        <li><strong>Оригінал:</strong> {{ en }}<br><strong>Переклад:</strong> {{ uk }}</li>
+        <br>
+        {% endfor %}
+    </ul>
+    <a href="/">Повернутися на головну сторінку</a>
+</body>
+</html>
